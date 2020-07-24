@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Maria Soldatenko](https://up.htmlacademy.ru/adaptive/20/user/1423269).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Соколов](https://htmlacademy.ru/profile/costigans).
 
 ---
 
