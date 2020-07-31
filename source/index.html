@@ -6,18 +6,16 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav"></nav>
+      <nav class="main-nav">
         <button class="page-header__button">
-          <span class="main-nav__toggle">PINK</span>
+          <span class="main-nav__toggle">Pink</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
@@ -25,8 +23,8 @@
       <section class="download-app">
         <div class="download-app__wrapper">
           <h2 class="download-app__title">Взгляните на жизнь иначе!</h2>
-          <img src="https://via.placeholder.com/150x150" width="320" height="286">
-          <button class="download-app__button">Скачать приложение</button>
+          <img src="https://via.placeholder.com/150x150" width="320" height="286" alt="Фото приложения">
+          <a class="download-app__button" href="#">Скачать приложение</a>
           <ul class="download-app__platforms platforms">
             <li class="platforms__item">
               <a class="platforms-link platforms__link--apple" href="#">Apple</a>
@@ -38,12 +36,13 @@
               <a class="platforms-link platforms__link--windows" href="#">Windows</a>
             </li>
           </ul>
+          <p class="download-app_text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
       <section class="description">
         <div class="description__wrapper">
           <h2 class="visually-hidden">Описание приложения</h2>
-            <p class="description__slogan">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</p>
+            <p class="description__motto">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</p>
             <ul class="description__list">
               <li class="description__item">
                 <h3 class="description__title">Поднимает настроение</h3>
@@ -56,7 +55,7 @@
               <li class="description__item">
                 <h3 class="description__title">Заводит новых друзей</h3>
                 <p class="description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                <img src="https://via.placeholder.com/150x150" width="157" height="320">
+                <img src="https://via.placeholder.com/150x150" width="157" height="320" alt="Заводите новых друзей">
               </li>
             </ul>
         </div>
@@ -65,18 +64,6 @@
         <div class="feedback__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="feedback__list slider__list">
-            <blockquote class="feedback__item slider__item">
-              <cite class="feedback__user-name">Николай Петров</cite>
-              <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-            <blockquote class="feedback__item slider__item">
-              <cite class="feedback__user-name"></cite>
-              <p class="feedback__text"></p>
-            </blockquote>
-            <blockquote class="feedback__item slider__item">
-              <cite class="feedback__user-name"></cite>
-              <p class="feedback__text"></p>
-            </blockquote>
           </div>
           <p class="feedback__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">1</button>
@@ -89,9 +76,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="https://via.placeholder.com/150x150" width="145" height="40">
+          <img src="https://via.placeholder.com/150x150" width="145" height="40" alt="Логотип">
         </div>
         <div class="page-footer__social social">
+          <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">twitter</a>
@@ -105,8 +93,9 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <p class="copyright__text">Разработано
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </p>
         </div>
       </div>
     </footer>
