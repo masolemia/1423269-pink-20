@@ -1,13 +1,13 @@
-.photos{
+.photos {
   width: @width-page;
 }
 
-.photos__list{
+.photos__list {
   list-style-type: none;
   padding: 0;
 }
 
-.photos__item{
+.photos__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,40 +16,37 @@
   margin-bottom: 20px;
 }
 
-.photos__comment{
+.photos__comment {
   box-sizing: border-box;
-  width:280px;
+  width: 280px;
   background-color: @adding-color;
   color: @background-color;
   padding-left: 17px;
   padding-right: 17px;
 }
 
-.photos__user-name{
+.photos__user-name {
   margin: 0;
   .font(14px; 24px);
   font-weight: bold;
 }
 
-.photos__time{
+.photos__time {
   .font(12px; 24px);
   font-weight: normal;
   text-transform: uppercase;
 }
 
-.photos__description{
+.photos__description {
   .font(14px;24px);
 }
 
-.photos__likes{
-  background-image: url(../img/icon-heart.svg);
+.photos__likes {
+  background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
-  background-position: 0px 5px;
-}
-
-.photos__likes{
+  background-position: 0.1px 5px;
   margin: 0;
-  color:@pink-color;
+  color: @pink-color;
   .font(12px; 24px);
   text-transform: uppercase;
   padding-left: 31px;
