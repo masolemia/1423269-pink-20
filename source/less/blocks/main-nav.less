@@ -2,23 +2,26 @@
   box-sizing: border-box;
   width: @width-page;
   height: @height;
-  background-color: @background-color;
+  background-color: @color-main;
 }
 
 .main-nav__button {
   .main-nav(69px);
 }
 
-.main-nav__button-image {
+.main-nav__button--image {
   position: absolute;
   top: 23px;
   left: 20px;
 }
 
-.main-nav__button-close {
+.main-nav__button--close {
   position: absolute;
   top: 23px;
   left: 277px;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
 }
 
 .main-nav__list {
@@ -29,14 +32,15 @@
 
 .main-nav__item {
   .main-nav();
-  box-shadow: 0.1px 1px 0.1px rgba(255, 255, 255, 0.15);
+
+  box-shadow: 1px 1px 1px desaturate(@color-white, 15%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .main-nav__link {
-  color: @font-color;
+  color: @color-white;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;

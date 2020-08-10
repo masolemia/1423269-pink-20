@@ -19,20 +19,22 @@
 .photos__comment {
   box-sizing: border-box;
   width: 280px;
-  background-color: @adding-color;
-  color: @background-color;
+  background-color: @color-adding;
+  color: @color-main;
   padding-left: 17px;
   padding-right: 17px;
 }
 
 .photos__user-name {
-  margin: 0;
   .font(14px; 24px);
+
+  margin: 0;
   font-weight: bold;
 }
 
 .photos__time {
   .font(12px; 24px);
+
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -42,12 +44,13 @@
 }
 
 .photos__likes {
+  .font(12px; 24px);
+
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: 0.1px 5px;
   margin: 0;
-  color: @pink-color;
-  .font(12px; 24px);
+  color: @color-pink;
   text-transform: uppercase;
   padding-left: 31px;
   padding-bottom: 26px;

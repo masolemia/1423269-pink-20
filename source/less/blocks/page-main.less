@@ -2,14 +2,18 @@
   width: @width-page;
 }
 
-.page-main__title {
+.page-main__block {
   box-sizing: border-box;
   margin: 0;
   padding: 36px 46px 51px 46px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position-y: -70px;
-  color: @font-color;
+}
+
+.page-main__title {
   .font(24px; 33px);
+
+  color: @color-white;
   font-weight: 300;
   text-align: center;
 }
@@ -21,9 +25,10 @@
 }
 
 .page-main__text {
-  width: 280px;
   .font(14px; 30px);
-  color: @background-color;
+  .margin-x(20px;20px);
+
+  width: 280px;
+  color: @color-main;
   text-align: center;
-  .margin-h(20px;20px);
 }

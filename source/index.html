@@ -10,10 +10,14 @@
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__button main-nav__toggle">
-          <img class="main-nav__button-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
-          <img class="main-nav__button-close" src="img/icon-menu-cross.svg" width="23" height="23" alt="Закрыть меню">
-        </button>
+        <div class="main-nav__button">
+          <a class="main-nav__button--link" href="#">
+            <img class="main-nav__button--image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+          </a>
+          <button class="main-nav__button--close main-nav__toggle">
+            <img class="main-nav__button--close--img" src="img/icon-menu-cross.svg" width="23" height="23" alt="Закрыть меню">
+          </button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" >Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
@@ -23,9 +27,10 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Взгляните на жизнь иначе!
+      <div class="page-main__block">
+        <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
         <img class="page-main__title-img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Скриншот приложения">
-      </h1>
+      </div>
       <section class="download-app">
         <div class="download-app__wrapper">
           <a class="download-app__button" href="#">Скачать приложение</a>
@@ -46,7 +51,8 @@
       <section class="description">
         <div class="description__wrapper">
           <h2 class="visually-hidden">Описание приложения</h2>
-            <p class="description__motto">Устали от серости мегаполиса?<br><br>Нам есть, что вам предложить!</p>
+            <p class="description__motto">Устали от серости мегаполиса?</p>
+            <p class="description__motto"> Нам есть, что вам предложить!</p>
             <ul class="description__list">
               <li class="description__item">
                 <h3 class="description__title">Поднимает настроение</h3>

@@ -1,19 +1,20 @@
 .download-app__wrapper {
-  background-color: @background-color;
+  background-color: @color-main;
   padding-top: 28px;
   padding-bottom: 38px;
 }
 
 .download-app__button {
+  .font(18px; 18px);
+  .size(280px; 55px);
+
   display: block;
   box-sizing: border-box;
-  color: @font-color;
-  .font(18px; 18px);
+  color: @color-white;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  .size(280px;55px);
-  border: 3px solid @font-color;
+  border: 3px solid @color-white;
   border-radius: 29px;
   margin: auto;
   padding-top: 15px;
@@ -29,9 +30,10 @@
 }
 
 .download-app__text {
-  width: 280px;
-  color: @font-color;
   .font(14px; 24px);
+
+  width: 280px;
+  color: @color-white;
   font-weight: 300;
   margin: auto;
   text-align: center;

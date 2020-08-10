@@ -10,10 +10,14 @@
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__button main-nav__toggle">
-          <img class="main-nav__button-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
-          <img class="main-nav__button-close" src="img/icon-menu-cross.svg" width="23" height="23" alt="Закрыть меню">
-        </button>
+        <div class="main-nav__button">
+          <a class="main-nav__button--link" href="index.html">
+            <img class="main-nav__button--image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+          </a>
+          <button class="main-nav__button--close main-nav__toggle">
+            <img class="main-nav__button--close--img" src="img/icon-menu-cross.svg" width="23" height="23" alt="Закрыть меню">
+          </button>
+        </div>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
             <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Фотографии</a></li>
@@ -23,7 +27,9 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Фотографии пользователей</h1>
+      <div class="page-main__block">
+        <h1 class="page-main__title">Фотографии пользователей</h1>
+      </div>
       <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! <br> Видите, как не хватает ваших?</p>
       <section class="page-main__photos photos">
         <h2 class="visually-hidden">Фотографии пользователей</h2>
