@@ -7,7 +7,9 @@
 .social__link {
   .size(48px, 48px);
 
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   border: 3px solid lighten(@color-main, 70%);
   border-radius: 50%;
@@ -16,10 +18,4 @@
   &:hover {
     border: 3px solid @color-main;
   }
-}
-
-.social__link--img {
-  position: relative;
-  top: 35%;
-  left: 35%;
 }

@@ -1,24 +1,26 @@
 .main-nav(@height:63px) {
   box-sizing: border-box;
   width: @width-page;
-  height: @height;
+  min-height: @height;
   background-color: @color-main;
 }
 
-.main-nav__button {
+.main-nav__header {
   .main-nav(69px);
 }
 
-.main-nav__button--image {
-  position: absolute;
+.main-nav__header--image {
+  position: relative;
   top: 23px;
   left: 20px;
 }
 
-.main-nav__button--close {
-  position: absolute;
+.main-nav__header--close {
+  position: relative;
   top: 23px;
-  left: 277px;
+  left: 183px;
+  width: 33px;
+  height: 33px;
   background-color: transparent;
   box-shadow: none;
   border: none;
