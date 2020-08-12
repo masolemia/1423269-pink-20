@@ -1,0 +1,51 @@
+.main-nav(@height:63px) {
+  box-sizing: border-box;
+  width: @width-page;
+  min-height: @height;
+  background-color: @color-main;
+}
+
+.main-nav__header {
+  .main-nav(69px);
+}
+
+.main-nav__header--image {
+  position: relative;
+  top: 23px;
+  left: 20px;
+}
+
+.main-nav__header--close {
+  position: relative;
+  top: 23px;
+  left: 183px;
+  width: 33px;
+  height: 33px;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  .main-nav();
+
+  box-shadow: 1px 1px 1px desaturate(@color-white, 15%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav__link {
+  color: @color-white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 32px;
+}

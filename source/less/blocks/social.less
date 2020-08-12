@@ -1,0 +1,21 @@
+.social__list {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.social__link {
+  .size(48px, 48px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 3px solid lighten(@color-main, 70%);
+  border-radius: 50%;
+  margin-right: 15px;
+
+  &:hover {
+    border: 3px solid @color-main;
+  }
+}
