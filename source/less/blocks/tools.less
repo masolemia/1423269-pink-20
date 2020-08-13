@@ -1,0 +1,28 @@
+.tools__buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 42px;
+  margin-bottom: 39px;
+}
+
+.tools__item {
+  background-color: transparent;
+  border: none;
+
+  &--active path {
+    fill: @color-pink;
+  }
+}
+
+.tools__range {
+  display: none;
+
+
+  &--active {
+    width: 240px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+}
