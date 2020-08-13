@@ -41,30 +41,34 @@
           </fieldset>
           <fieldset class="form__group form__group--achievements achievements">
             <legend class="achievements__legend">Ваши безбашенные достижения в путешествии</legend>
-            <label class="achievements__name"><input class="achievements__point" type="checkbox" name="Selfie with shark" checked>Сделал селфи с акулой</label>
-            <label class="achievements__name"><input class="achievements__point" type="checkbox" name="Sunbathed on the beach" checked>Обгорел на пляже</label>
-            <label class="achievements__name"><input class="achievements__point" type="checkbox" name="Saw Chuck Norris">Видел Чака Норриса</label>
-            <label class="achievements__name"><input class="achievements__point" type="checkbox" name="Bought souvenirs">Накупил сувениров</label>
-            <label class="achievements__name"><input class="achievements__point" type="checkbox" name="Kept the tower" checked>Удержал башню</label>
-            <label class="achievements__name"><input class="achievements__point" type="checkbox" name="Destroyed the hotel">Разгромил отель</label>
+            <ul class="achievements__list">
+              <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Selfie with shark" checked>Сделал селфи с акулой</label></li>
+              <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Sunbathed on the beach" checked>Обгорел на пляже</label></li>
+              <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Saw Chuck Norris">Видел Чака Норриса</label></li>
+              <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Bought souvenirs">Накупил сувениров</label></li>
+              <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Kept the tower" checked>Удержал башню</label></li>
+              <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Destroyed the hotel">Разгромил отель</label></li>
+            </ul>
           </fieldset>
           <fieldset class="form__group form__group--contacts contacts">
-            <legend class="contacts__legend">Ваши контакты</legend>
+            <legend class="visually-hidden">Ваши контакты</legend>
             <label class="contacts__name">Номер телефона<input class="contacts__field" type="tel" name="phone" placeholder="Номер, пожалуйста"></label>
             <label class="contacts__name">Адрес почты<input class="contacts__field" type="email" name="email" placeholder="Введите почту *" required></label>
           </fieldset>
           <fieldset class="form__group form__group--app app">
             <legend class="app__legend">С каким приложением путешествовали?</legend>
-            <label class="app__name"><input class="app_point" type="radio" name="application" value="iOs" checked>Pink для iOS</label>
-            <label class="app__name"><input class="app_point" type="radio" name="application" value="Android">Pink на Android</label>
-            <label class="app__name"><input class="app_point" type="radio" name="application" value="Windows Phone">Windows Phone</label>
+            <ul class="app__list">
+              <li><label class="app__name"><input class="app__point" type="radio" name="application" value="iOs" checked>Pink для iOS</label></li>
+              <li><label class="app__name"><input class="app__point" type="radio" name="application" value="Android">Pink на Android</label></li>
+              <li><label class="app__name"><input class="app__point" type="radio" name="application" value="Windows Phone">Windows Phone</label></li>
+            </ul>
           </fieldset>
           <fieldset class="form__group form__group--feedback feedback-app">
             <legend class="feedback-app__legend">Опишите свои эмоции</legend>
-            <input class="feedback-app__text" type="text" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            <textarea class="feedback-app__text" type="text" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <button class="form__button-submit" type="submit">Отправить форму</button>
-          <p class="form__note"><span class="form__note_highlight">*</span> — обязательные поля</p>
+          <p class="form__note"><span class="form__note--highlight">*</span> — обязательные поля</p>
         </form>
       </main>
       <footer class="page-footer">

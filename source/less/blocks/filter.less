@@ -1,41 +1,17 @@
+.filter {
+  background-color: @color-adding;
+}
+
 .filter__text {
   .font (14px;30px);
 
   color: @color-main;
   text-align: center;
+  background-color: @color-white;
 }
 
 .filter__image {
   .margin-x(20px;20px);
-}
-
-.tools__buttons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 42px;
-  margin-bottom: 39px;
-}
-
-.tools__item {
-  background-color: transparent;
-  border: none;
-
-  &--active path {
-    fill: @color-pink;
-  }
-}
-
-.tools__range {
-  display: none;
-
-
-  &--active {
-    width: 240px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 72px;
-  }
 }
 
 .filter__button {
