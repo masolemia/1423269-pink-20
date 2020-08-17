@@ -1,21 +1,13 @@
-.main-nav(@height:63px) {
-  box-sizing: border-box;
-  width: @width-page;
-  min-height: @height;
-  background-color: @color-main;
-}
-
 .main-nav__header {
-  .main-nav(69px);
+  min-height: 69px;
 }
 
-.main-nav__header--image {
+.main-nav__image {
   position: relative;
   top: 23px;
-  left: 20px;
 }
 
-.main-nav__header--close {
+.main-nav__toggle {
   position: relative;
   top: 23px;
   left: 183px;
@@ -24,6 +16,14 @@
   background-color: transparent;
   box-shadow: none;
   border: none;
+  background-image: url("../../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+
+  &--close {
+    background-image: url("../../img/icon-menu-cross.svg");
+  }
 }
 
 .main-nav__list {
@@ -33,12 +33,13 @@
 }
 
 .main-nav__item {
-  .main-nav();
+  .padding-x();
 
-  box-shadow: 1px 1px 1px desaturate(@color-white, 15%);
+  box-shadow: 0.1px 1px desaturate(@color-white, 15%);
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 63px;
 }
 
 .main-nav__link {

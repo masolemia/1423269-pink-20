@@ -1,0 +1,35 @@
+.prices-table {
+  overflow-x: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+.prices-table__rate {
+  .font (16px; 30px);
+
+  background-color: @color-main;
+  color: @color-white;
+  font-weight: bold;
+  min-height: 94px;
+
+  &--value {
+    .font (18px; 30px);
+
+    font-weight: 300;
+  }
+
+  &--hit {
+    background-image: url("../../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
+  }
+}
+
+.prices-table__option {
+  .font(14px; 30px);
+
+  color: @color-main;
+  text-transform: uppercase;
+  min-height: 59px;
+}

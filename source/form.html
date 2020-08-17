@@ -8,63 +8,80 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
-    <div class="page__container">
-      <header class="page-header">
-        <nav class="main-nav">
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="page__container">
           <div class="main-nav__header">
-            <a class="main-nav__header--link" href="index.html">
-              <img class="main-nav__header--image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+            <a class="main-nav__link" href="index.html">
+              <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
             </a>
-            <button class="main-nav__header--close main-nav__toggle">
+            <button class="main-nav__toggle main-nav__toggle--close">
               <span class="visually-hidden">Закрыть меню</span>
             </button>
           </div>
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-              <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Конкурс</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-            </ul>
-        </nav>
-      </header>
+          <ul class="main-nav__list">
+            <li class="main-nav__item "><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item "><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
       <main class="page-main">
         <div class="page-main__block">
-          <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <div class="page__container">
+            <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          </div>
         </div>
         <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-          <fieldset class="form__group form__group--personal personal">
-            <legend class="visually-hidden">Ваши данные</legend>
-            <label class="personal__name">Фамилия:<input class="personal__field" type="text" name="surname" placeholder="Укажите фамилию *" required></label>
-            <label class="personal__name">Имя:<input class="personal__field" type="text" name="name" placeholder="Введите ваше имя *" required></label>
-            <label class="personal__name">Отчество:<input class="personal__field" type="text" name="patronymic" placeholder="Ну и отчество тоже"></label>
-          </fieldset>
+          <div class="page__container">
+            <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+            <fieldset class="form__group form__group--personal personal">
+              <legend class="visually-hidden">Ваши данные</legend>
+              <label class="personal__name">Фамилия:<input class="personal__field" type="text" name="surname" placeholder="Укажите фамилию *" required></label>
+              <label class="personal__name">Имя:<input class="personal__field" type="text" name="name" placeholder="Введите ваше имя *" required></label>
+              <label class="personal__name">Отчество:<input class="personal__field" type="text" name="patronymic" placeholder="Ну и отчество тоже"></label>
+            </fieldset>
+          </div>
           <fieldset class="form__group form__group--achievements achievements">
-            <legend class="achievements__legend">Ваши безбашенные достижения в путешествии</legend>
-            <label class="achievements__name"><input class="achievements__point" type="checkbox" name="Selfie with shark" checked>Сделал селфи с акулой</label>
-            <label class="achievements__name"><input class="achievements__point" type="checkbox" name="Sunbathed on the beach" checked>Обгорел на пляже</label>
-            <label class="achievements__name"><input class="achievements__point" type="checkbox" name="Saw Chuck Norris">Видел Чака Норриса</label>
-            <label class="achievements__name"><input class="achievements__point" type="checkbox" name="Bought souvenirs">Накупил сувениров</label>
-            <label class="achievements__name"><input class="achievements__point" type="checkbox" name="Kept the tower" checked>Удержал башню</label>
-            <label class="achievements__name"><input class="achievements__point" type="checkbox" name="Destroyed the hotel">Разгромил отель</label>
+            <legend class="achievements__legend page__container">Ваши безбашенные достижения в путешествии</legend>
+            <div class="page__container">
+              <ul class="achievements__list">
+                <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Selfie with shark" checked>Сделал селфи с акулой</label></li>
+                <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Sunbathed on the beach" checked>Обгорел на пляже</label></li>
+                <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Saw Chuck Norris">Видел Чака Норриса</label></li>
+                <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Bought souvenirs">Накупил сувениров</label></li>
+                <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Kept the tower" checked>Удержал башню</label></li>
+                <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Destroyed the hotel">Разгромил отель</label></li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="form__group form__group--contacts contacts">
-            <legend class="contacts__legend">Ваши контакты</legend>
-            <label class="contacts__name">Номер телефона<input class="contacts__field" type="tel" name="phone" placeholder="Номер, пожалуйста"></label>
-            <label class="contacts__name">Адрес почты<input class="contacts__field" type="email" name="email" placeholder="Введите почту *" required></label>
+            <legend class="visually-hidden">Ваши контакты</legend>
+            <div class="page__container">
+              <label class="contacts__name">Номер телефона<input class="contacts__field" type="tel" name="phone" placeholder="Номер, пожалуйста"></label>
+              <label class="contacts__name">Адрес почты<input class="contacts__field" type="email" name="email" placeholder="Введите почту *" required></label>
+            </div>
           </fieldset>
           <fieldset class="form__group form__group--app app">
-            <legend class="app__legend">С каким приложением путешествовали?</legend>
-            <label class="app__name"><input class="app_point" type="radio" name="application" value="iOs" checked>Pink для iOS</label>
-            <label class="app__name"><input class="app_point" type="radio" name="application" value="Android">Pink на Android</label>
-            <label class="app__name"><input class="app_point" type="radio" name="application" value="Windows Phone">Windows Phone</label>
+            <legend class="app__legend page__container">С каким приложением путешествовали?</legend>
+            <div class="page__container">
+              <ul class="app__list">
+                <li><label class="app__name"><input class="app__point" type="radio" name="application" value="iOs" checked>Pink для iOS</label></li>
+                <li><label class="app__name"><input class="app__point" type="radio" name="application" value="Android">Pink на Android</label></li>
+                <li><label class="app__name"><input class="app__point" type="radio" name="application" value="Windows Phone">Windows Phone</label></li>
+              </ul>
+            </div>
           </fieldset>
-          <fieldset class="form__group form__group--feedback feedback-app">
-            <legend class="feedback-app__legend">Опишите свои эмоции</legend>
-            <input class="feedback-app__text" type="text" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях">
-          </fieldset>
-          <button class="form__button-submit" type="submit">Отправить форму</button>
-          <p class="form__note"><span class="form__note--highlight">*</span> — обязательные поля</p>
+          <div class="page__container">
+            <fieldset class="form__group form__group--feedback feedback-app">
+              <legend class="feedback-app__legend">Опишите свои эмоции</legend>
+              <textarea class="feedback-app__text" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <button class="form__button-submit" type="submit">Отправить форму</button>
+            <p class="form__note"><span class="form__note--highlight">*</span> — обязательные поля</p>
+          </div>
         </form>
       </main>
       <footer class="page-footer">
@@ -89,6 +106,5 @@
           </p>
         </div>
       </footer>
-    </div>
   </body>
 </html>

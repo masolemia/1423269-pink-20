@@ -1,0 +1,36 @@
+.filter {
+  background-color: @color-adding;
+
+  &--white {
+    background-color: @color-white;
+  }
+}
+
+.filter__text {
+  .font (14px;30px);
+  .padding-x();
+
+  color: @color-main;
+  text-align: center;
+}
+
+.filter__button {
+  .size(280px;55px);
+  .font(18px;18px);
+
+  font-weight: bold;
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin-bottom: 12px;
+
+  &--post {
+    color: @color-pink;
+    border: 3px solid @color-pink;
+  }
+
+  &--reset {
+    color: @color-main;
+    border: 3px solid @color-main;
+    opacity: 0.1;
+  }
+}
