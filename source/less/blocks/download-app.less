@@ -19,6 +19,7 @@
   border: 3px solid @color-white;
   border-radius: 29px;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 .download-app__platforms {
@@ -28,6 +29,7 @@
   align-items: center;
   padding-left: 58px;
   padding-right: 58px;
+  margin-bottom: 30px;
 }
 
 .download-app__text {
@@ -38,4 +40,36 @@
   font-weight: 300;
   margin: auto;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .download-app__tablet {
+    width: 340px;
+  }
+
+  .download-app__button {
+    .size (300px;55px);
+
+    margin-bottom: 45px;
+  }
+
+  .download-app__platforms {
+    margin-bottom: 40px;
+  }
+
+  .download-app__text {
+    .font (18px;24px);
+
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-app__button {
+    margin-bottom: 75px;
+  }
+
+  .download-app__platforms {
+    margin-bottom: 58px;
+  }
 }

@@ -8,8 +8,42 @@
 
 .page-footer__logo {
   margin-bottom: 41px;
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .page-footer__social {
   margin-bottom: 53px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    min-height: 127px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .page-footer__logo,
+  .page-footer__social {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    min-height: 197px;
+  }
+
+  .page-footer__logo {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }

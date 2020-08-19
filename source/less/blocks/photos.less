@@ -46,4 +46,27 @@
   color: @color-pink;
   text-transform: uppercase;
   padding-left: 31px;
+  margin-top: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .photos__comment {
+    min-height: 155px;
+
+    &--panorama {
+      width: 620px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__comment--panorama {
+    width: 940px;
+  }
 }
