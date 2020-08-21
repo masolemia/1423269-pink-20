@@ -5,11 +5,6 @@
 .main-nav__image {
   position: relative;
   top: 23px;
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
 }
 
 .main-nav__toggle {
@@ -63,19 +58,8 @@
     min-height: 110px;
   }
 
-  .main-nav__image {
-    &--tablet {
-      display: block;
-    }
-
-    &--mobile,
-    &--desktop {
-      display: none;
-    }
-  }
-
   .main-nav__toggle {
-    top: 1px;
+    top: 23px;
     left: 544px;
   }
 }
@@ -86,19 +70,14 @@
     justify-content: space-between;
   }
 
-  .main-nav__image {
-    &--desktop {
-      display: block;
-    }
-
-    &--mobile,
-    &--tablet {
-      display: none;
-    }
-  }
-
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__item {
+    margin-right: 79px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .main-nav__list {

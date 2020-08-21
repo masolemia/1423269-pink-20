@@ -1,0 +1,61 @@
+.effect {
+  display: none;
+  background-color: @color-white;
+}
+
+@media (min-width:@tablet-width) {
+  .effect {
+    display: block;
+  }
+
+  .effect__block {
+    display: flex;
+    justify-content: space-around;
+}
+
+  .effect__item {
+    width: 310px;
+    margin-left: 72px;
+  }
+
+  .effect__title {
+    .font (30px; 36px);
+
+    font-weight: bold;
+    color: @color-black;
+  }
+
+  .effect__text {
+    .font (14px; 24px);
+
+    color: @color-main;
+  }
+
+  .effect__link {
+    .font (14px; 24px);
+
+    color: @color-pink;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .effect {
+    background-color: @color-adding;
+  }
+
+  .effect__item {
+    width: 534px;
+  }
+
+  .effect__title {
+    .font (30px; 30px);
+  }
+
+  .effect__text {
+    .font (18px; 30px);
+  }
+
+  .effect__link {
+    .font (18px; 30px);
+  }
+}

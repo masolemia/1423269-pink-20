@@ -1,4 +1,4 @@
-.description__motto {
+.capabilities__motto {
   .font(24px; 29px);
   .padding-x ();
 
@@ -8,20 +8,20 @@
   font-weight: 300;
 }
 
-.description__block {
+.capabilities__block {
   background-color: @color-adding;
 }
 
-.description__list {
+.capabilities__list {
   list-style-type: none;
   padding: 0;
 }
 
-.description__item {
+.capabilities__item {
   .padding-x ();
 }
 
-.description__title {
+.capabilities__title {
   .font(18px; 24px);
 
   color: @color-black;
@@ -29,7 +29,7 @@
   text-align: center;
 }
 
-.description__text {
+.capabilities__text {
   .font(14px; 24px);
 
   color: @color-main;
@@ -37,11 +37,11 @@
   margin-bottom: 43px;
 }
 
-.description__item-image {
+.capabilities__item-image {
   display: none;
 }
 
-.description__app-screen {
+.capabilities__app-screen {
   display: flex;
   margin: auto;
 
@@ -50,32 +50,32 @@
   }
 }
 
-.description__effect {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
-  .description__motto {
+  .capabilities__motto {
     .font (40px;54px);
 
     margin-top: 58px;
   }
 
-  .description__block-tablet {
+  .capabilities__block-tablet {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-around;
   }
 
-  .description__title {
-    text-align: start;
-  }
-
-  .description__text {
+  .capabilities__item {
     width: 310px;
-    text-align: start;
   }
 
-  .description__app-screen {
+  .capabilities__title {
+    text-align: left;
+  }
+
+  .capabilities__text {
+    text-align: left;
+  }
+
+  .capabilities__app-screen {
     &--mobile {
       display: none;
     }
@@ -84,69 +84,43 @@
       display: block;
     }
   }
-
-  .description__effect {
-    background-color: @color-white;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .description__effect__link {
-    .font (14px; 24px);
-
-    color: @color-pink;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .description__motto {
+  .capabilities__motto {
     .font (50px;68px);
-
     margin-top: 77px;
   }
 
-  .description__list {
+  .capabilities__list {
     display: flex;
   }
 
-  .description__item {
+  .capabilities__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 252px;
   }
 
-  .description__title {
+  .capabilities__title {
     .font(30px; 30px);
 
     text-align: center;
-
-    &--effect {
-      text-align: start;
-    }
   }
 
-  .description__text {
+  .capabilities__text {
     .font (18px; 30px);
 
-    width: 252px;
     text-align: center;
-
-    &--effect {
-      text-align: start;
-      width: 534px;
-    }
   }
 
-  .description__item-image {
+  .capabilities__item-image {
     display: block;
     order: -1;
   }
 
-  .description__app-screen {
+  .capabilities__app-screen {
     display: none;
-  }
-
-  .description__effect__link {
-    .font (18px; 30px);
   }
 }
