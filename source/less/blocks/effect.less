@@ -1,6 +1,7 @@
 .effect {
   display: none;
   background-color: @color-white;
+  min-height: 246px;
 }
 
 @media (min-width: @tablet-width) {
@@ -9,13 +10,15 @@
   }
 
   .effect__block {
-    display: flex;
-    justify-content: space-around;
+    background-image: url("../../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: left;
   }
 
   .effect__item {
     width: 310px;
-    margin-left: 72px;
+    margin-left: auto;
   }
 
   .effect__title {
@@ -23,6 +26,7 @@
 
     font-weight: bold;
     color: @color-black;
+    margin-top: 0;
   }
 
   .effect__text {
