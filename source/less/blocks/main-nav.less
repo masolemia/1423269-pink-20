@@ -1,16 +1,15 @@
-.main-nav__header {
-  min-height: 69px;
+.main-nav {
+  background-color: @color-main;
 }
 
-.main-nav__image {
-  position: relative;
-  top: 23px;
+.main-nav__header {
+  min-height: 69px;
+  padding: 23px 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-nav__toggle {
-  position: relative;
-  top: 23px;
-  left: 183px;
   width: 33px;
   height: 33px;
   background-color: transparent;
@@ -55,19 +54,16 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__header {
-    min-height: 110px;
-  }
-
-  .main-nav__toggle {
-    top: 23px;
-    left: 544px;
+    min-height: 100px;
+    padding: 42px 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__desktop {
+  .main-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .main-nav__toggle {
@@ -76,8 +72,6 @@
 
   .main-nav__item {
     margin-right: 79px;
-    padding-top: 48px;
-    padding-bottom: 48px;
     box-shadow: none;
   }
 
