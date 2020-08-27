@@ -2,38 +2,37 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page__header">
       <nav class="main-nav">
-        <div class="page__container">
-          <div class="main-nav__header">
-            <a class="main-nav__link" href="index.html">
-              <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
-            </a>
-            <button class="main-nav__toggle main-nav__toggle--close">
-              <span class="visually-hidden">Закрыть меню</span>
-            </button>
-          </div>
-          <ul class="main-nav__list">
-            <li class="main-nav__item "><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item "><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          </ul>
+        <div class="main-nav__header">
+          <a class="main-nav__link" href="index.html">
+            <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--close">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
         </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item "><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item "><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
       </nav>
+      <div class="header-block">
+          <div class="page__container">
+            <h1 class="header-block__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          </div>
+        </div>
     </header>
       <main class="page-main">
-        <div class="page-main__block">
-          <div class="page__container">
-            <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-          </div>
-        </div>
         <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
           <div class="page__container">
             <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
@@ -87,7 +86,7 @@
       <footer class="page-footer">
         <div class="page-footer__wrapper">
           <div class="page-footer__logo">
-            <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink">
+            <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink">
           </div>
           <div class="page-footer__social social">
             <h2 class="visually-hidden">Социальные сети</h2>

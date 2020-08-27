@@ -2,7 +2,8 @@
   .margin-x(100px;100px);
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
 }
 
 .slider__toggle {
@@ -16,5 +17,11 @@
     color: @color-white;
     border: 2px solid @color-main;
     opacity: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__toggles {
+    display: none;
   }
 }

@@ -1,3 +1,12 @@
+.photos__text {
+  .font(14px; 30px);
+  .padding-x();
+
+  color: @color-main;
+  text-align: center;
+  background-color: @color-white;
+}
+
 .photos__list {
   list-style-type: none;
   padding: 0;
@@ -46,4 +55,41 @@
   color: @color-pink;
   text-transform: uppercase;
   padding-left: 31px;
+  margin-top: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__text {
+    .font(18px; 30px);
+
+    padding-top: 100px;
+    padding-bottom: 85px;
+  }
+
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .photos__comment {
+    min-height: 155px;
+
+    &--panorama {
+      width: 620px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__text {
+    .padding-x(182px);
+
+    padding-bottom: 97px;
+  }
+
+  .photos__comment--panorama {
+    width: 940px;
+  }
 }

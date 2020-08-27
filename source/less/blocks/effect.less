@@ -1,0 +1,68 @@
+.effect {
+  display: none;
+  background-color: @color-white;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+  }
+
+  .effect__block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 276px;
+    background-position: left center;
+    min-height: 440px;
+  }
+
+  .effect__item {
+    width: 310px;
+    margin-left: auto;
+  }
+
+  .effect__title {
+    .font (30px; 36px);
+
+    font-weight: bold;
+    color: @color-black;
+    margin-top: 0;
+  }
+
+  .effect__text {
+    .font (14px; 24px);
+
+    color: @color-main;
+  }
+
+  .effect__link {
+    .font (14px; 24px);
+
+    color: @color-pink;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: @color-adding;
+  }
+
+  .effect__item {
+    width: 534px;
+  }
+
+  .effect__title {
+    .font (30px; 30px);
+  }
+
+  .effect__text {
+    .font (18px; 30px);
+  }
+
+  .effect__link {
+    .font (18px; 30px);
+  }
+}
