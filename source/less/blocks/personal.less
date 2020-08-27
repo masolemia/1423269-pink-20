@@ -9,9 +9,35 @@
 .personal__field {
   .size (276px; 59px);
 
-  box-sizing: border-box;
   color: @color-black;
   border: 2px solid @color-light-grey;
   border-radius: 1px;
   padding-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .personal {
+    .margin-x (auto;auto);
+  }
+
+  .personal__name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+
+  .personal__field {
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .personal {
+    margin-right: 35px;
+  }
+
+  .personal__container {
+    width: 431px;
+  }
 }

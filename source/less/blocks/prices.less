@@ -1,8 +1,11 @@
 .prices-table {
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
   margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
 
 .prices-table__rate {
   .font (16px; 30px);
@@ -11,8 +14,9 @@
   color: @color-white;
   font-weight: bold;
   min-height: 94px;
+  width: 276px;
 
-  &--value {
+  &--cost {
     .font (18px; 30px);
 
     font-weight: 300;
@@ -28,9 +32,76 @@
 }
 
 .prices-table__option {
+  display: none;
+}
+
+.prices-table__value {
+  background-color: @color-white;
+  border: 2px solid @color-light-grey;
+  width: 276px;
+}
+
+.prices-table__name {
   .font(14px; 30px);
 
   color: @color-main;
   text-transform: uppercase;
   min-height: 59px;
+}
+
+@media (min-width: @tablet-width) {
+  .prices-table__rate {
+    min-height: 75px;
+    width: 152px;
+  }
+
+  .prices-table__value {
+    width: 152px;
+    min-height: 45px;
+  }
+
+  .prices-table__option {
+    display: table-cell;
+    background-color: @color-white;
+    border: 2px solid @color-light-grey;
+    width: 152px;
+    min-height: 45px;
+
+    &--empty {
+      border: none;
+    }
+  }
+
+  .prices-table__name {
+    display: none;
+  }
+
+  .prices__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .prices-table__rate {
+    .font (18px; 30px);
+
+    min-height: 94px;
+    width: 233px;
+
+    &--cost {
+      .font (24px; 30px);
+    }
+  }
+
+  .prices-table__option {
+    .font (18px; 30px);
+
+    width: 234px;
+    min-height: 59px;
+  }
+
+  .prices-table__value {
+    width: 234px;
+    min-height: 59px;
+  }
 }

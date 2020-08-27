@@ -1,10 +1,14 @@
-
 .form__text {
   .font(14px;30px);
-  .margin-x(20px;20px);
 
   color: @color-main;
   text-align: center;
+  width: 280px;
+  margin: 54px auto;
+
+  &--wish {
+    display: none;
+  }
 }
 
 .form__group {
@@ -42,5 +46,63 @@
 
   &--highlight {
     color: @color-pink;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__text {
+    .font (18px;30px);
+
+    width: 490px;
+    margin-top: 100px;
+    margin-bottom: 82px;
+
+    &--wish {
+      display: inline;
+    }
+  }
+
+  .form__group {
+    width: 616px;
+
+    &--personal {
+      order: -2;
+    }
+
+    &--app {
+      order: -1;
+    }
+  }
+
+  .form__submit-section {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__text {
+    width: 756px;
+  }
+
+  .form__group {
+    &--personal {
+      width: 433px;
+    }
+
+    &--app {
+      width: 431px;
+    }
   }
 }

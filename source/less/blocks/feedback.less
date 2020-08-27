@@ -17,9 +17,61 @@
   text-align: center;
 }
 
+.feedback__user-biography {
+  display: none;
+}
+
 .feedback__text {
   .font(14px; 30px);
 
   color: @color-main;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__item--current {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback__user-name {
+    .font (20px;30px);
+  }
+
+  .feedback__user-biography {
+    .font (14px;30px);
+
+    display: block;
+    color: @color-main;
+    text-align: center;
+  }
+
+  .feedback__text {
+    .font (18px; 30px);
+
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__list {
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 72px;
+  }
+
+  .feedback__item--current {
+    padding-top: 193px;
+  }
+
+  .feedback__user-name {
+    .font (24px;30px);
+
+    margin-top: 50px;
+  }
+
+  .feedback__user-biography {
+    .font (18px;30px);
+  }
 }
