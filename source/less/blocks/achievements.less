@@ -21,3 +21,19 @@
   text-align: center;
   margin-left: 22px;
 }
+
+@media (min-width: @tablet-width) {
+  .achievements {
+    .margin-x (auto;auto);
+
+    border: 2px groove @color-light-grey;
+    background-color: @color-white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .achievements__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

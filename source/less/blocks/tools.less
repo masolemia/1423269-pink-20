@@ -21,8 +21,70 @@
 
   &--active {
     width: 240px;
+    height: 2px;
     display: block;
     margin: 0 auto;
     margin-bottom: 72px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .tools {
+    display: flex;
+  }
+
+  .tools__buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 66px;
+  }
+
+  .tools__item path {
+    fill: @color-pink;
+  }
+
+  .tools__item g {
+    opacity: 1;
+  }
+
+  .tools__item svg {
+    height: 22px;
+    width: 22px;
+  }
+
+  .tools__ranges {
+    display: flex;
+    flex-direction: column;
+    margin-top: 76px;
+    margin-left: 30px;
+  }
+
+  .tools__range {
+    display: block;
+    width: 200px;
+    height: 2px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tools__buttons {
+    gap: 30px;
+    margin-top: 55px;
+  }
+
+  .tools__item svg {
+    height: 44px;
+    width: 44px;
+  }
+
+  .tools__ranges {
+    margin-left: 48px;
+  }
+
+  .tools__range {
+    width: 288px;
   }
 }

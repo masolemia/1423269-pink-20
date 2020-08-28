@@ -33,16 +33,18 @@
         </div>
     </header>
       <main class="page-main">
+        <div class="page__container">
+          <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__text form__text--wish">Пожалуйста, заполните форму ниже: </span></p>
+        </div>
         <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="page__container">
-            <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-            <fieldset class="form__group form__group--personal personal">
+          <fieldset class="form__group form__group--personal personal">
+            <div class="page__container personal__container">
               <legend class="visually-hidden">Ваши данные</legend>
               <label class="personal__name">Фамилия:<input class="personal__field" type="text" name="surname" placeholder="Укажите фамилию *" required></label>
               <label class="personal__name">Имя:<input class="personal__field" type="text" name="name" placeholder="Введите ваше имя *" required></label>
               <label class="personal__name">Отчество:<input class="personal__field" type="text" name="patronymic" placeholder="Ну и отчество тоже"></label>
-            </fieldset>
-          </div>
+            </div>
+          </fieldset>
           <fieldset class="form__group form__group--achievements achievements">
             <legend class="achievements__legend page__container">Ваши безбашенные достижения в путешествии</legend>
             <div class="page__container">
@@ -57,15 +59,21 @@
             </div>
           </fieldset>
           <fieldset class="form__group form__group--contacts contacts">
-            <legend class="visually-hidden">Ваши контакты</legend>
-            <div class="page__container">
-              <label class="contacts__name">Номер телефона<input class="contacts__field" type="tel" name="phone" placeholder="Номер, пожалуйста"></label>
-              <label class="contacts__name">Адрес почты<input class="contacts__field" type="email" name="email" placeholder="Введите почту *" required></label>
+            <legend class="contacts__legend">Контактная информация</legend>
+            <div class="contacts__container page__container">
+              <div class="contacts__item">
+                <label for="user-phone-number" class="contacts__name">Номер телефона</label>
+                <input id="user-phone-number" class="contacts__field contacts__field--phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="contacts__item">
+                <label for="user-mail" class="contacts__name">Адрес почты</label>
+                <input id="user-mail" class="contacts__field contacts__field--mail" type="email" name="email" placeholder="Введите почту *" required>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__group form__group--app app">
-            <legend class="app__legend page__container">С каким приложением путешествовали?</legend>
-            <div class="page__container">
+            <legend class="app__legend page__container app__container">С каким приложением путешествовали?</legend>
+            <div class="page__container app__container">
               <ul class="app__list">
                 <li><label class="app__name"><input class="app__point" type="radio" name="application" value="iOs" checked>Pink для iOS</label></li>
                 <li><label class="app__name"><input class="app__point" type="radio" name="application" value="Android">Pink на Android</label></li>
@@ -74,12 +82,14 @@
             </div>
           </fieldset>
           <div class="page__container">
-            <fieldset class="form__group form__group--feedback feedback-app">
+            <fieldset class="form__group form__group--feedback-app feedback-app">
               <legend class="feedback-app__legend">Опишите свои эмоции</legend>
               <textarea class="feedback-app__text" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
-            <button class="form__button-submit" type="submit">Отправить форму</button>
-            <p class="form__note"><span class="form__note--highlight">*</span> — обязательные поля</p>
+            <div class="form__submit-section">
+              <button class="form__button-submit" type="submit">Отправить форму</button>
+              <p class="form__note"><span class="form__note--highlight">*</span> — обязательные поля</p>
+            </div>
           </div>
         </form>
       </main>

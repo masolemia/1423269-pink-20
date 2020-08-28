@@ -104,7 +104,7 @@
               <p class="filter__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
             </div>
           </div>
-          <div class="page__container">
+          <div class="filter__block page__container">
             <img class="filter__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Ваша фотография">
             <form  class="filter__form" action="https://echo.htmlacademy.ru" method="POST">
               <div class="filter__tools tools">
@@ -131,12 +131,16 @@
                     </svg>
                   </button>
                 </div>
-                <input class="tools__range--active" type="range" name="crop-range">
-                <input class="tools__range" type="range" name="fill-range">
-                <input class="tools__range" type="range" name="contrast-range">
+                <div class="tools__ranges">
+                  <input class="tools__range tools__range--active" type="range" name="crop-range">
+                  <input class="tools__range" type="range" name="fill-range">
+                  <input class="tools__range" type="range" name="contrast-range">
+                </div>
               </div>
-              <button class="filter__button filter__button--post" type="submit" name="submit">Запостить</button>
-              <button class="filter__button filter__button--reset" type="reset" name="reset">Отмена</button>
+              <div class="filter__buttons">
+                <button class="filter__button filter__button--post" type="submit" name="submit">Запостить</button>
+                <button class="filter__button filter__button--reset" type="reset" name="reset">Отмена</button>
+              </div>
             </form>
           </div>
         </section>
