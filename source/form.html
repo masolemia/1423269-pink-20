@@ -36,8 +36,8 @@
         <div class="page__container">
           <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__text form__text--wish">Пожалуйста, заполните форму ниже: </span></p>
         </div>
-        <form class="page-main__form form page__container" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__group form__group--personal personal">
+        <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__group form__group--personal personal page__container">
               <legend class="visually-hidden">Ваши данные</legend>
               <label class="personal__name">Фамилия:<input class="personal__field" type="text" name="surname" placeholder="Укажите фамилию *" required></label>
               <label class="personal__name">Имя:<input class="personal__field" type="text" name="name" placeholder="Введите ваше имя *" required></label>
@@ -54,7 +54,7 @@
                 <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Destroyed the hotel">Разгромил отель</label></li>
               </ul>
           </fieldset>
-          <fieldset class="form__group form__group--contacts contacts">
+          <fieldset class="form__group form__group--contacts contacts page__container">
             <legend class="contacts__legend">Контактная информация</legend>
             <div class="contacts__container">
               <div class="contacts__item">
@@ -75,7 +75,7 @@
                 <li><label class="app__name"><input class="app__point" type="radio" name="application" value="Windows Phone">Windows Phone</label></li>
               </ul>
           </fieldset>
-          <fieldset class="form__group form__group--feedback-app feedback-app">
+          <fieldset class="form__group form__group--feedback-app feedback-app page__container">
             <legend class="feedback-app__legend">Опишите свои эмоции</legend>
             <textarea class="feedback-app__text" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
