@@ -22,10 +22,7 @@
 
 @media (min-width: @tablet-width) {
   .contacts {
-    .margin-x (auto;auto);
-
-    border: 2px groove @color-light-grey;
-    width: 616px;
+    .border-block-form();
   }
 
   .contacts__legend {
@@ -51,16 +48,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .contacts {
-    width: 936px;
-  }
-
   .contacts__container {
     display: flex;
     justify-content: space-around;
   }
 
   .contacts__item {
+    .margin-x (0;0);
     margin-bottom: 23px;
   }
 
