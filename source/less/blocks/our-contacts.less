@@ -36,3 +36,26 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+@media (min-width: @tablet-width) {
+  .our-contacts__text {
+    .font(40px; 54px);
+  }
+
+  .our-contacts__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .our-contacts__item {
+    width: 241px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .our-contacts__text {
+    .font(50px; 68px);
+  }
+}

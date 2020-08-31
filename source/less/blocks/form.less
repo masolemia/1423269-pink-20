@@ -1,13 +1,19 @@
-
 .form__text {
   .font(14px;30px);
-  .margin-x(20px;20px);
 
   color: @color-main;
   text-align: center;
+  width: 280px;
+  margin: 54px auto;
+
+  &--wish {
+    display: none;
+  }
 }
 
 .form__group {
+  .margin-x (auto;auto);
+
   border: none;
   padding: 0;
   margin-bottom: 44px;
@@ -42,5 +48,68 @@
 
   &--highlight {
     color: @color-pink;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__text {
+    .font (18px;30px);
+
+    width: 490px;
+    margin-top: 100px;
+    margin-bottom: 82px;
+
+    &--wish {
+      display: inline;
+    }
+  }
+
+  .form__group {
+    width: 616px;
+
+    &--personal {
+      order: -2;
+    }
+
+    &--app {
+      order: -1;
+    }
+  }
+
+  .form__submit-section {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    .margin-x (auto;auto);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+  }
+
+  .form__text {
+    width: 756px;
+  }
+
+  .form__group {
+    width: 936px;
+
+    &--personal {
+      width: 433px;
+    }
+
+    &--app {
+      width: 431px;
+    }
   }
 }

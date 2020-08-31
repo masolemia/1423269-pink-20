@@ -1,7 +1,6 @@
 .feedback-app__legend {
   .font (14px;18px);
 
-  width: 218px;
   color: @color-pink;
   text-transform: uppercase;
   text-align: center;
@@ -9,9 +8,33 @@
 
 .feedback-app__text {
   display: block;
-  box-sizing: border-box;
   width: 276px;
   min-height: 197px;
   padding: 22px;
   margin: 2px;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-app {
+    .border-block-form();
+  }
+
+  .feedback-app__legend {
+    .font (14px; 30px);
+  }
+
+  .feedback-app__text {
+    width: 496px;
+    min-height: 189px;
+    margin: 50px 60px;
+    border: 2px solid @color-light-grey;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback-app__text {
+    width: 816px;
+    min-height: 124px;
+    margin: 45px 60px;
+  }
 }
