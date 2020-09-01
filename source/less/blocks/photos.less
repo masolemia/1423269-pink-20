@@ -43,6 +43,7 @@
 
 .photos__description {
   .font(14px;24px);
+  margin-top: 14px;
 }
 
 .photos__likes {
@@ -67,14 +68,14 @@
   }
 
   .photos__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 
   .photos__comment {
     min-height: 155px;
+    flex-grow: 1;
 
     &--panorama {
       width: 620px;
@@ -87,6 +88,10 @@
     .padding-x(182px);
 
     padding-bottom: 97px;
+  }
+
+  .photos__list {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .photos__comment--panorama {

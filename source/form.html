@@ -10,12 +10,12 @@
   </head>
   <body class="page__body">
     <header class="page__header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <div class="main-nav__header">
           <a class="main-nav__link" href="index.html">
             <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
           </a>
-          <button class="main-nav__toggle main-nav__toggle--close">
+          <button class="main-nav__toggle">
             <span class="visually-hidden">Закрыть меню</span>
           </button>
         </div>
@@ -46,7 +46,7 @@
           <fieldset class="form__group form__group--achievements achievements">
             <legend class="achievements__legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="achievements__list">
-                <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Selfie with shark" checked>Сделал селфи с акулой</label></li>
+                <li><label class="achievements__name"><input class="visually-hidden achievements__point" type="checkbox" name="Selfie with shark" checked>Сделал селфи с акулой</label></li>
                 <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Sunbathed on the beach" checked>Обгорел на пляже</label></li>
                 <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Saw Chuck Norris">Видел Чака Норриса</label></li>
                 <li><label class="achievements__name"><input class="achievements__point" type="checkbox" name="Bought souvenirs">Накупил сувениров</label></li>
@@ -107,5 +107,6 @@
           </p>
         </div>
       </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
