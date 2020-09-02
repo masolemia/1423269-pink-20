@@ -16,18 +16,23 @@
 .achievements__name {
   .font (18px;30px);
 
-  width: 200px;
   color: @color-main;
   text-align: center;
   margin-left: 22px;
+  margin-top: 47px;
+  margin-bottom: 47px;
+  display: flex;
 }
 
 .achievements__name::before {
   content: " ";
   .size(35px;35px);
 
-  background-image: url("../img/checkbox.svg");
+  display: block;
+  border: 2px solid @color-light-grey;
+  background-color: @color-white;
   position: relative;
+  margin-right: 22px;
 }
 
 @media (min-width: @tablet-width) {
