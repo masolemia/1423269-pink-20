@@ -2,12 +2,20 @@
   display: none;
 }
 
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 22px 29px;
+}
+
 .contacts__name {
   .font(14px;30px);
 
   color: @color-pink;
   text-transform: uppercase;
   margin-left: 23px;
+  order: -1;
 }
 
 .contacts__field {
@@ -42,16 +50,40 @@
   }
 
   .contacts__item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     margin: 40px 60px;
   }
 
+  .contacts__name {
+    margin-left: -59px;
+    margin-top: -59px;
+  }
+
   .contacts__field {
-    width: 437px;
     order: -1;
+    width: 437px;
     margin-bottom: 22px;
+  }
+
+  .contacts__field + label::before {
+    content: " ";
+    .size(59px;59px);
+
+    display: inline-block;
+    background-color: @color-light-grey;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    position: relative;
+    top: -22px;
+    left: 440px;
+  }
+
+  .contacts__field--phone + label::before {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  .contacts__field--mail + label::before {
+    background-image: url("../img/icon-mail.svg");
   }
 }
 
@@ -69,5 +101,10 @@
 
   .contacts__field {
     width: 371px;
+  }
+
+  .contacts__field + label::before {
+    top: -22px;
+    left: 370px;
   }
 }

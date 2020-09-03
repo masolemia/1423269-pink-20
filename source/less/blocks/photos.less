@@ -20,6 +20,8 @@
 }
 
 .photos__comment {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   width: 280px;
   background-color: @color-adding;
@@ -44,6 +46,7 @@
 .photos__description {
   .font(14px;24px);
   margin-top: 14px;
+  margin-bottom: 27px;
 }
 
 .photos__likes {
@@ -80,6 +83,11 @@
     &--panorama {
       width: 620px;
     }
+  }
+
+  .photos__likes {
+    background-position: right 5px;
+    padding-left: 0;
   }
 }
 

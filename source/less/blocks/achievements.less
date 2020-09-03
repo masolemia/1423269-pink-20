@@ -1,3 +1,9 @@
+.achievements {
+  .margin-x (auto;auto);
+
+  border: none;
+}
+
 .achievements__legend {
   .font (14px;18px);
 
@@ -24,7 +30,7 @@
   display: flex;
 }
 
-.achievements__name::before {
+.achievements__point + label::before {
   content: " ";
   .size(35px;35px);
 
@@ -33,6 +39,21 @@
   background-color: @color-white;
   position: relative;
   margin-right: 22px;
+}
+
+.achievements__point:hover + label::before {
+  border-color: @color-main;
+}
+
+.achievements__point:focus + label::before {
+  border-color: @color-pink;
+}
+
+.achievements__point:checked + label::before {
+  background-image: url("../img/checkbox-checked.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
 
 @media (min-width: @tablet-width) {
@@ -45,7 +66,7 @@
 
 @media (min-width: @desktop-width) {
   .achievements__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
