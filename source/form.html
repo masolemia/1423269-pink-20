@@ -11,7 +11,7 @@
   <body class="page__body">
     <header class="page__header">
       <nav class="main-nav main-nav--nojs">
-        <div class="main-nav__header">
+        <div class="main-nav__header page__container">
           <a class="main-nav__link" href="index.html">
             <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
           </a>
@@ -43,38 +43,69 @@
               <label class="personal__name">Имя:<input class="personal__field" type="text" name="name" placeholder="Введите ваше имя *" required></label>
               <label class="personal__name">Отчество:<input class="personal__field" type="text" name="patronymic" placeholder="Ну и отчество тоже"></label>
           </fieldset>
-          <fieldset class="form__group form__group--achievements achievements">
-            <legend class="achievements__legend">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="achievements__list">
-                <li><label class="achievements__name"><input class="visually-hidden achievements__point" type="checkbox" name="Selfie with shark" checked>Сделал селфи с акулой</label></li>
-                <li><label class="achievements__name"><input class="visually-hidden achievements__point" type="checkbox" name="Sunbathed on the beach" checked>Обгорел на пляже</label></li>
-                <li><label class="achievements__name"><input class="visually-hidden achievements__point" type="checkbox" name="Saw Chuck Norris">Видел Чака Норриса</label></li>
-                <li><label class="achievements__name"><input class="visually-hidden achievements__point" type="checkbox" name="Bought souvenirs">Накупил сувениров</label></li>
-                <li><label class="achievements__name"><input class="visually-hidden achievements__point" type="checkbox" name="Kept the tower" checked>Удержал башню</label></li>
-                <li><label class="achievements__name"><input class="visually-hidden achievements__point" type="checkbox" name="Destroyed the hotel">Разгромил отель</label></li>
-              </ul>
-          </fieldset>
+          <div class="form__group form__group--achievements">
+            <fieldset class=" achievements">
+              <legend class="achievements__legend">Ваши безбашенные достижения в путешествии</legend>
+                <ul class="achievements__list">
+                  <li>
+                    <input class="visually-hidden achievements__point" type="checkbox" id="Selfie with shark" name="Selfie with shark" checked>
+                    <label class="achievements__name" for="Selfie with shark">Сделал селфи с акулой</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden achievements__point" type="checkbox" id="Sunbathed on the beach" name="Sunbathed on the beach" checked>
+                    <label class="achievements__name" for="Sunbathed on the beach">Обгорел на пляже</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden achievements__point" type="checkbox" id="Saw Chuck Norris" name="Saw Chuck Norris">
+                    <label class="achievements__name" for="Saw Chuck Norris">Видел Чака Норриса</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden achievements__point" type="checkbox" id="Bought souvenirs" name="Bought souvenirs">
+                    <label class="achievements__name" for="Bought souvenirs">Накупил сувениров</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden achievements__point" type="checkbox" id="Kept the tower" name="Kept the tower" checked>
+                    <label class="achievements__name" for="Kept the tower">Удержал башню</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden achievements__point" type="checkbox" id="Destroyed the hotel" name="Destroyed the hotel">
+                    <label class="achievements__name" for="Destroyed the hotel">Разгромил отель</label>
+                  </li>
+                </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__group form__group--contacts contacts page__container">
             <legend class="contacts__legend">Контактная информация</legend>
             <div class="contacts__container">
               <div class="contacts__item">
-                <label for="user-phone-number" class="contacts__name">Номер телефона</label>
                 <input id="user-phone-number" class="contacts__field contacts__field--phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                <label for="user-phone-number" class="contacts__name">Номер телефона</label>
               </div>
               <div class="contacts__item">
-                <label for="user-mail" class="contacts__name">Адрес почты</label>
                 <input id="user-mail" class="contacts__field contacts__field--mail" type="email" name="email" placeholder="Введите почту *" required>
+                <label for="user-mail" class="contacts__name">Адрес почты</label>
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__group form__group--app app">
-            <legend class="app__legend">С каким приложением путешествовали?</legend>
-              <ul class="app__list">
-                <li><label class="app__name"><input class="app__point" type="radio" name="application" value="iOs" checked>Pink для iOS</label></li>
-                <li><label class="app__name"><input class="app__point" type="radio" name="application" value="Android">Pink на Android</label></li>
-                <li><label class="app__name"><input class="app__point" type="radio" name="application" value="Windows Phone">Windows Phone</label></li>
-              </ul>
-          </fieldset>
+          <div class="form__group form__group--app">
+            <fieldset class="app">
+              <legend class="app__legend">С каким приложением путешествовали?</legend>
+                <ul class="app__list">
+                  <li>
+                    <input class="visually-hidden app__point" type="radio" name="application" id="iOs" value="iOs" checked>
+                    <label class="app__name" for="iOs">Pink для iOS</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden app__point" type="radio" name="application" id="Android" value="Android">
+                    <label class="app__name" for="Android">Pink на Android</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden app__point" type="radio" name="application" id="Windows Phone" value="Windows Phone">
+                    <label class="app__name" for="Windows Phone">Windows Phone</label>
+                  </li>
+                </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__group form__group--feedback-app feedback-app page__container">
             <legend class="feedback-app__legend">Опишите свои эмоции</legend>
             <textarea class="feedback-app__text" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>

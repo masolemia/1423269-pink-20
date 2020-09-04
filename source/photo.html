@@ -11,7 +11,7 @@
   <body class="page__body">
       <header class="page__header">
         <nav class="main-nav main-nav--nojs">
-          <div class="main-nav__header">
+          <div class="main-nav__header page__container">
             <a class="main-nav__link" href="index.html">
               <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
             </a>
@@ -132,9 +132,18 @@
                   </button>
                 </div>
                 <div class="tools__ranges">
-                  <input class="tools__range tools__range--active" type="range" name="crop-range">
-                  <input class="tools__range" type="range" name="fill-range">
-                  <input class="tools__range" type="range" name="contrast-range">
+                  <div class="tools__range tools__range--active">
+                    <div class="tools__scale"></div>
+                    <div class="tools__toggle tools__toggle--crop"></div>
+                  </div>
+                  <div class="tools__range">
+                    <div class="tools__scale"></div>
+                    <div class="tools__toggle tools__toggle--fill"></div>
+                  </div>
+                  <div class="tools__range">
+                    <div class="tools__scale"></div>
+                    <div class="tools__toggle tools__toggle--contrast"></div>
+                  </div>
                 </div>
               </div>
               <div class="filter__buttons">

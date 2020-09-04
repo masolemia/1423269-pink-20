@@ -7,8 +7,7 @@
   padding-bottom: 49px;
 }
 
-.prices-table {
-  overflow: hidden;
+.prices__table {
   width: 100%;
   margin: auto;
   border-collapse: collapse;
@@ -17,8 +16,7 @@
   margin-bottom: 45px;
 }
 
-
-.prices-table__rate {
+.prices__rate {
   .font (16px; 30px);
 
   background-color: @color-main;
@@ -42,36 +40,59 @@
   }
 }
 
-.prices-table__option {
+.prices__option {
   display: none;
 }
 
-.prices-table__value {
+.prices__value {
+  .padding-x(20px);
+
   background-color: @color-white;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 90% center;
   border: 2px solid @color-light-grey;
   width: 276px;
+  height: 59px;
+  margin: 0;
+
+  &--yes {
+    background-image: url("../img/icon-yes.svg");
+  }
+
+  &--no {
+    background-image: url("../img/icon-no.svg");
+  }
 }
 
-.prices-table__name {
+.prices__name {
   .font(14px; 30px);
 
   color: @color-main;
   text-transform: uppercase;
   min-height: 59px;
+  margin-right: auto;
+}
+
+@media (max-width: @tablet-width) {
+  .prices__hidden {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .prices-table__rate {
+  .prices__rate {
     min-height: 75px;
     width: 152px;
   }
 
-  .prices-table__value {
+  .prices__value {
     width: 152px;
     min-height: 45px;
+    background-position: center;
   }
 
-  .prices-table__option {
+  .prices__option {
     display: table-cell;
     background-color: @color-white;
     border: 2px solid @color-light-grey;
@@ -84,7 +105,7 @@
     }
   }
 
-  .prices-table__name {
+  .prices__name {
     display: none;
   }
 
@@ -94,7 +115,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .prices-table__rate {
+  .prices__rate {
     .font (18px; 30px);
 
     min-height: 94px;
@@ -105,14 +126,14 @@
     }
   }
 
-  .prices-table__option {
+  .prices__option {
     .font (18px; 30px);
 
     width: 234px;
     min-height: 59px;
   }
 
-  .prices-table__value {
+  .prices__value {
     width: 234px;
     min-height: 59px;
   }

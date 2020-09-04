@@ -1,3 +1,9 @@
+.app {
+  .margin-x (auto;auto);
+
+  border: none;
+}
+
 .app__legend {
   .font (14px;18px);
 
@@ -15,6 +21,35 @@
   .font (18px; 30px);
 
   color: @color-main;
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.app__point + label::before {
+  content: " ";
+  .size(37px;37px);
+
+  display: block;
+  border: 2px solid @color-light-grey;
+  border-radius: 50%;
+  background-color: @color-white;
+  position: relative;
+  margin-right: 22px;
+}
+
+.app__point:hover + label::before {
+  border-color: @color-main;
+}
+
+.app__point:focus + label::before {
+  border-color: @color-pink;
+}
+
+.app__point:checked + label::before {
+  background-image: url("../img/radio.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
 
 @media (min-width: @tablet-width) {
