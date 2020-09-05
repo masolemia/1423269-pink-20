@@ -1,0 +1,32 @@
+.panorama__photo {
+  position: relative;
+}
+
+.panorama__label {
+  .font (12px; 24px);
+  .size (140px;36px);
+
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: @color-pink;
+  color: @color-white;
+  text-align: center;
+  padding-top: 7px;
+  position: absolute;
+  top: 0.1px;
+  left: 160px;
+}
+
+@media (min-width: @tablet-width) {
+  .panorama__label {
+    top: 57px;
+    left: 500px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .panorama__label {
+    top: 54px;
+    left: 930px;
+  }
+}
