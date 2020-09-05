@@ -11,7 +11,7 @@
   <body class="page__body">
       <header class="page__header">
         <nav class="main-nav main-nav--nojs">
-          <div class="main-nav__header page__container">
+          <div class="main-nav__header">
             <a class="main-nav__link" href="index.html">
               <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
             </a>
@@ -180,11 +180,14 @@
               </div>
             </div>
           </div>
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)"  srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-            <img class="our-contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="ул. Большая Конюшенная, 19/8">
-          </picture>
+          <div class="our-contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.207572322049!2d30.3230474!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1599317159924!5m2!1sru!2sru"  width="320" height="200" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 660px)"  srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, 19/8">
+            </picture>
+          </div>
       </section>
       </main>
       <footer class="page-footer">
