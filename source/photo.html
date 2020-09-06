@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
       <header class="page__header">
         <nav class="main-nav main-nav--nojs">
-          <div class="main-nav__header page__container">
+          <div class="main-nav__header">
             <a class="main-nav__link" href="index.html">
               <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
             </a>
@@ -38,7 +37,16 @@
             <p class="photos__text">Взгляните на фотографии, которые выкладывают пользователи!  Видите, как не хватает ваших?</p>
             <h2 class="visually-hidden">Фотографии пользователей</h2>
             <div class="photos__item panorama">
-              <a href="#"><img class="panorama__image panorama__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня"></a>
+              <div class="panorama__photo">
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                    <img class="panorama__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+                  </picture>
+                </a>
+                <div class="panorama__label">Панорама дня</div>
+              </div>
               <div class="photos__comment photos__comment--panorama page__container">
                 <p class="photos__user-name">Анна <span class="photos__time">(5 минут назад)</span></p>
                 <p class="photos__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -47,7 +55,13 @@
             </div>
             <ul class="photos__list">
               <li class="photos__item">
-                <a href="#"><img class="photos__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя"></a>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                  </picture>
+                </a>
                 <div class="photos__comment">
                   <p class="photos__user-name">Левон <span class="photos__time">(5 часов назад)</span></p>
                   <p class="photos__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -55,7 +69,13 @@
                 </div>
               </li>
               <li class="photos__item">
-                <a href="#"><img class="photos__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя"></a>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                  </picture>
+                </a>
                 <div class="photos__comment">
                   <p class="photos__user-name">Антон <span class="photos__time">(12 часов назад)</span></p>
                   <p class="photos__description">Соседи будут рады!</p>
@@ -63,7 +83,13 @@
                 </div>
               </li>
               <li class="photos__item">
-                <a href="#"><img class="photos__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя"></a>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                  </picture>
+                </a>
                 <div class="photos__comment">
                   <p class="photos__user-name">Борис <span class="photos__time">(20 часов назад)</span></p>
                   <p class="photos__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -71,7 +97,13 @@
                 </div>
               </li>
               <li class="photos__item">
-                <a href="#"><img class="photos__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя"></a>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                  </picture>
+                </a>
                 <div class="photos__comment">
                   <p class="photos__user-name">Сергей <span class="photos__time">(25 часов назад)</span></p>
                   <p class="photos__description">Самая кубанская в мире!</p>
@@ -79,7 +111,13 @@
                 </div>
               </li>
               <li class="photos__item">
-                <a href="#"><img class="photos__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя"></a>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                  </picture>
+                </a>
                 <div class="photos__comment">
                   <p class="photos__user-name">Максим <span class="photos__time">(40 часов назад)</span></p>
                   <p class="photos__description">Где снег-то?</p>
@@ -87,7 +125,13 @@
                 </div>
               </li>
               <li class="photos__item">
-                <a href="#"><img class="photos__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя"></a>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                  </picture>
+                </a>
                 <div class="photos__comment">
                   <p class="photos__user-name">Надежда <span class="photos__time">(45 часов назад)</span></p>
                   <p class="photos__description">Всем GM и взаимные лайки!</p>
@@ -105,7 +149,11 @@
             </div>
           </div>
           <div class="filter__block page__container">
-            <img class="filter__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Ваша фотография">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="filter__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Ваша фотография">
+            </picture>
             <form  class="filter__form" action="https://echo.htmlacademy.ru" method="POST">
               <div class="filter__tools tools">
                 <div class="tools__buttons">
