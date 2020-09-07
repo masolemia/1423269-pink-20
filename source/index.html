@@ -11,8 +11,12 @@
       <header class="page__header">
         <nav class="main-nav main-nav--nojs">
           <div class="main-nav__header">
-            <a class="main-nav__link" href="index.html">
-              <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+            <a class="main-nav__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+              </picture>
             </a>
             <button class="main-nav__toggle">
               <span class="visually-hidden">Закрыть меню</span>
@@ -32,16 +36,16 @@
           <div class=" header-block__download-app download-app">
             <div class="page__container">
               <div class="download-app__container">
-                <a class="download-app__button" href="#">Скачать приложение</a>
+                <a class="download-app__button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
                 <ul class="download-app__platforms platforms">
                   <li class="platforms__item">
-                    <a class="platforms-link" href="#"><img src="img/logo-apple.svg" width="47" height="56" alt="Apple"></a>
+                    <a class="platforms-link" href="https://www.apple.com/ru/ios/app-store/"><img src="img/logo-apple.svg" width="47" height="56" alt="Apple"></a>
                   </li>
                   <li class="platforms__item">
-                    <a class="platforms-link" href="#"><img src="img/logo-android.svg" width="43" height="47" alt="Android"></a>
+                    <a class="platforms-link" href="https://play.google.com/store/apps?hl=ru"><img src="img/logo-android.svg" width="43" height="47" alt="Android"></a>
                   </li>
                   <li class="platforms__item">
-                    <a class="platforms-link" href="#"><img src="img/logo-microsoft.svg" width="44" height="41" alt="Microsoft"></a>
+                    <a class="platforms-link" href="https://www.microsoft.com/ru-ru/store/apps/windows"><img src="img/logo-microsoft.svg" width="44" height="41" alt="Microsoft"></a>
                   </li>
                 </ul>
                 <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -64,22 +68,33 @@
                   <li class="capabilities__item">
                     <h3 class="capabilities__title">Поднимает настроение</h3>
                     <p class="capabilities__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                    <img class="capabilities__item-image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Скриншот приложения">
+                    <picture class="capabilities__item-image">
+                      <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                      <img  src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Скриншот приложения">
+                    </picture>
                   </li>
                   <li class="capabilities__item">
                     <h3 class="capabilities__title">Меняет мир вокруг</h3>
                     <p class="capabilities__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                    <img class="capabilities__item-image" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Скриншот приложения">
+                    <picture class="capabilities__item-image" >
+                      <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                      <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Скриншот приложения">
+                    </picture>
                   </li>
                   <li class="capabilities__item">
                     <h3 class="capabilities__title">Заводит новых друзей</h3>
                     <p class="capabilities__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                    <img class="capabilities__item-image" src="img/iphone-screen-3-desktop@1x.png"  alt="Скриншот приложения">
+                    <picture class="capabilities__item-image" >
+                      <source type="image/webp" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                      <img src="img/iphone-screen-3-desktop@1x.png"  alt="Скриншот приложения">
+                    </picture>
                   </li>
                 </ul>
                 <picture>
-                  <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-                  <img class="capabilities__app-screen" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Скрин приложения">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+                  <source type="image/webp"  srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+                  <source media="(min-width: 660px)" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.png 2x">
+                  <img class="capabilities__app-screen" src="" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Скрин приложения">
                 </picture>
               </div>
             </div>
@@ -182,6 +197,9 @@
           <div class="our-contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.207572322049!2d30.3230474!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1599317159924!5m2!1sru!2sru"  width="320" height="200" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"  srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 660px)"  srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
               <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, 19/8">
@@ -192,7 +210,12 @@
       <footer class="page-footer">
         <div class="page-footer__wrapper page__container">
           <div class="page-footer__logo">
-            <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink">
+            <a href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+                <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink">
+              </picture>
+            </a>
           </div>
           <div class="page-footer__social social">
             <h2 class="visually-hidden">Социальные сети</h2>

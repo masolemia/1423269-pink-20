@@ -1,0 +1,41 @@
+.logo {
+  .size (74px;23px);
+}
+
+.logo__glasses {
+  display: none;
+}
+
+.logo__stars {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    .size(145px;40px);
+  }
+
+  .logo__glasses--full {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo {
+    .size(147px;40px);
+  }
+
+  .logo__glasses {
+    &--full {
+      display: none;
+    }
+
+    &--dotted {
+      display: block;
+    }
+  }
+
+  .logo__stars {
+    display: block;
+  }
+}
