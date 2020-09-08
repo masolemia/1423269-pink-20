@@ -11,6 +11,15 @@ const imagemin =require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
 
+//HTML
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"))
+    .pipe(sync.stream());
+}
+
+exports.html = html;
+
 // Styles
 
 const styles = () => {
@@ -22,7 +31,7 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -35,7 +44,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -46,16 +55,6 @@ const server = (done) => {
 
 exports.server = server;
 
-// Watcher
-
-const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
-}
-
-exports.default = gulp.series(
-  styles, server, watcher
-);
 
 
 //Images
@@ -88,7 +87,8 @@ const copy = () => {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source/*.ico"
+    "source/*.ico",
+    "source/*.html"
   ],{
     base: "source"
   })
@@ -103,10 +103,22 @@ const clean = () => {
 
 exports.clean = clean;
 
+// Watcher
+
+const watcher = () => {
+  gulp.watch("source/less/**/*.less", gulp.series("styles"));
+  gulp.watch("source/*.html", gulp.series("html"));
+}
+
+exports.default = gulp.series(
+  styles, server, watcher
+);
+
 const build = gulp.series(
   clean,
   copy,
-  styles
+  styles,
+  html
 );
 
 exports.build = build;
