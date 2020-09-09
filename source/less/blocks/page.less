@@ -5,16 +5,43 @@
 
 .page__header {
   background-color: @color-dark-blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page__container {
     width: 620px;
   }
+
+  .page__header {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page__container {
     width: 940px;
+  }
+
+  .page__header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }

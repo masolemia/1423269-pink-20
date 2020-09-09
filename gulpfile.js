@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
+const htmlMinimizer = require("gulp-html-minimizer");
 const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
@@ -14,6 +15,7 @@ const del = require("del");
 //HTML
 const html = () => {
   return gulp.src("source/*.html")
+    .pipe(htmlMinimizer({}))
     .pipe(gulp.dest("build"))
     .pipe(sync.stream());
 }
