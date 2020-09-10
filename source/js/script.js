@@ -1,8 +1,9 @@
-let mainNav = document.querySelector(".main-nav");
-let navToggle = mainNav.querySelector(".main-nav__toggle");
-let form = document.querySelector(".form");
-let successPopUp = form.querySelector(".pop-up--success");
-let closePopUp = form.querySelector(".pop-up__button");
+"use strict";
+const mainNav = document.querySelector(".main-nav");
+const navToggle = mainNav.querySelector(".main-nav__toggle");
+const form = document.querySelector(".form");
+const successPopUp = form.querySelector(".pop-up--success");
+const closePopUp = form.querySelector(".pop-up__button");
 
 mainNav.classList.remove("main-nav--nojs");
 navToggle.classList.add("main-nav__toggle--opened");
@@ -21,13 +22,21 @@ navToggle.addEventListener("click", function(){
   }
 });
 
-form.addEventListener("submit",function(){
-  form.preventDefault();
+const onFormSubmit = function(evt) {
+  evt.preventDefault();
   if (successPopUp.classList.contains("pop-up--closed")){
     successPopUp.classList.remove("pop-up--closed");
   }
-});
 
-closePopUp.addEventListener("click", function() {
+  closePopUp.addEventListener("click", onClosePopUpClick);
+  form.removeEventListener("submit", onFormSubmit);
+};
+
+const onClosePopUpClick = function() {
   successPopUp.classList.add("pop-up--closed");
-});
+
+  closePopUp.removeEventListener("click", onClosePopUpClick);
+  form.addEventListener("submit", onFormSubmit);
+};
+
+form.removeEventListener("submit", onFormSubmit);
