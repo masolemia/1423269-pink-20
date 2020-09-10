@@ -18,7 +18,9 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "stylelint": "13.6.1",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "stylelint-config-htmlacademy": "0.1.4",
+    "del": "^5.1.0",
+    "gulp-copy": "^4.0.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -42,9 +44,5 @@
   ],
   "engines": {
     "node": "12.18.2"
-  },
-  "dependencies": {
-    "del": "^5.1.0",
-    "gulp-copy": "^4.0.1"
   }
 }

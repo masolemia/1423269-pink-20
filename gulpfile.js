@@ -57,8 +57,6 @@ const server = (done) => {
 
 exports.server = server;
 
-
-
 //Images
 
 const images = () => {
@@ -68,6 +66,7 @@ const images = () => {
       imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
     ]))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.images = images;
@@ -77,7 +76,7 @@ exports.images = images;
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.webp = createWebp;
@@ -87,10 +86,8 @@ exports.webp = createWebp;
 const copy = () => {
   return gulp.src ([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
     "source/js/**",
     "source/*.ico",
-    "source/*.html"
   ],{
     base: "source"
   })
@@ -110,6 +107,7 @@ exports.clean = clean;
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("html"));
+  gulp.watch("source/img/**/*.{png,jpg}", gulp.series(images, webp));
 }
 
 exports.default = gulp.series(

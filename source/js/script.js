@@ -23,11 +23,11 @@ navToggle.addEventListener("click", function(){
 
 form.addEventListener("submit",function(){
   form.preventDefault();
-  successPopUp.classList.remove("pop-up--closed");
-  successPopUp.classList.add("pop-up--opened");
+  if (successPopUp.classList.contains("pop-up--closed")){
+    successPopUp.classList.remove("pop-up--closed");
+  }
 });
 
 closePopUp.addEventListener("click", function() {
-  successPopUp.classList.remove("pop-up--opened");
   successPopUp.classList.add("pop-up--closed");
 });
