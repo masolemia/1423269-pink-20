@@ -41,22 +41,6 @@ const styles = () => {
 
 exports.styles = styles;
 
-// Server
-
-const server = (done) => {
-  sync.init({
-    server: {
-      baseDir: "build"
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
-}
-
-exports.server = server;
-
 //Images
 
 const images = () => {
@@ -102,6 +86,22 @@ const clean = () => {
 
 exports.clean = clean;
 
+// Server
+
+const server = (done) => {
+  sync.init({
+    server: {
+      baseDir: "build"
+    },
+    cors: true,
+    notify: false,
+    ui: false,
+  });
+  done();
+}
+
+exports.server = server;
+
 // Watcher
 
 const watcher = () => {
@@ -110,15 +110,17 @@ const watcher = () => {
   gulp.watch("source/img/**/*.{png,jpg}", gulp.series(images, webp));
 }
 
-exports.default = gulp.series(
-  styles, server, watcher
-);
-
 const build = gulp.series(
   clean,
   copy,
   styles,
-  html
+  html,
+  images,
+  createWebp
 );
 
 exports.build = build;
+
+exports.default = gulp.series(
+  build, server, watcher
+);
