@@ -5,15 +5,19 @@
   background-size: cover;
   padding-top: 60px;
   padding-bottom: 49px;
+  position: relative;
+  overflow: hidden;
 }
 
 .prices__table {
-  width: 100%;
+  width: 828px;
   margin: auto;
   border-collapse: collapse;
   border-spacing: 0;
   margin-top: 83px;
   margin-bottom: 45px;
+  position: relative;
+  transform: translateX(-33%);
 }
 
 .prices__rate {
@@ -74,13 +78,12 @@
   margin-right: auto;
 }
 
-@media (max-width: @tablet-width) {
-  .prices__hidden {
-    display: none;
-  }
-}
-
 @media (min-width: @tablet-width) {
+  .prices__table {
+    width: 610px;
+    transform: translateX(0);
+  }
+
   .prices__rate {
     min-height: 75px;
     width: 152px;
@@ -115,6 +118,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .prices__table {
+    width: 934px;
+  }
+
   .prices__rate {
     .font (18px; 30px);
 
