@@ -85,8 +85,28 @@
 }
 
 @media (min-width: @desktop-width) {
+  .achievements {
+    padding-bottom: 45px;
+  }
+
   .achievements__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .achievements__list li:first-child {
+    order: -4;
+  }
+
+  .achievements__list li:nth-child(5) {
+    order: -2;
+  }
+
+  .achievements__list li:nth-child(3) {
+    order: -3;
+  }
+
+  .achievements__name {
+    margin-bottom: 15px;
   }
 }

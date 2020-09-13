@@ -94,21 +94,27 @@
 @media (min-width: @desktop-width) {
   .contacts__container {
     display: flex;
-    justify-content: space-around;
+    column-gap: 60px;
+    margin-left: 55px;
   }
 
   .contacts__item {
     .margin-x (0;0);
 
-    margin-bottom: 23px;
+    margin-bottom: 13px;
   }
 
-  .contacts__field {
-    width: 371px;
+  .contacts__name {
+    margin-left: -38px;
+    margin-top: -52px;
   }
 
   .contacts__field + label::before {
-    top: -22px;
-    left: 370px;
+    top: -31px;
+    left: 357px;
+  }
+
+  .contacts__field {
+    width: 380px;
   }
 }
