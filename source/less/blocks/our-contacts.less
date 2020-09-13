@@ -120,8 +120,27 @@
 }
 
 @media (min-width: @desktop-width) {
+  .our-contacts {
+    margin-bottom: 10px;
+  }
+
   .our-contacts__text {
     .font(50px; 68px);
+
+    margin-top: 60px;
+    margin-bottom: 36px;
+  }
+
+  .our-contacts__appeal {
+    margin-bottom: 20px;
+  }
+
+  .our-contacts__item:nth-child(2) {
+    order: 1;
+  }
+
+  .our-contacts__map::before {
+    background-position: center -20px;
   }
 
   .our-contacts__map img {

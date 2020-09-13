@@ -111,28 +111,42 @@
 }
 
 @media (min-width: @desktop-width) {
+  .capabilities__block {
+    background-position-y: 20px;
+    background-size: cover;
+    padding-top: 35px;
+  }
+
   .capabilities__motto {
     .font (50px;68px);
-    margin-top: 77px;
+    .margin-x(auto;auto);
+
+    width: 580px;
+
+    &:first-of-type {
+      width: 780px;
+      margin-top: 55px;
+    }
   }
 
   .capabilities__list {
     display: flex;
-    column-gap: 130px;
+    column-gap: 74px;
   }
 
   .capabilities__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 252px;
+    width: 248px;
   }
 
   .capabilities__title {
     .font(30px; 30px);
 
     text-align: center;
-    width: 244px;
+    width: 240px;
+    margin-top: 55px;
   }
 
   .capabilities__text {
