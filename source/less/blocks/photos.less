@@ -89,7 +89,15 @@
 
     &--panorama {
       width: 620px;
+      padding-bottom: 0;
     }
+  }
+
+  .photos__comment--panorama .photos__likes {
+    position: relative;
+    left: 65%;
+    top: -100px;
+    background-position-x: 120px;
   }
 
   .photos__likes {
@@ -100,9 +108,11 @@
 
 @media (min-width: @desktop-width) {
   .photos__text {
-    .padding-x(182px);
+    .padding-x(0);
+    .margin-x (auto;auto);
 
-    padding-bottom: 97px;
+    padding-bottom: 37px;
+    width: 572px;
   }
 
   .photos__list {
@@ -111,5 +121,12 @@
 
   .photos__comment--panorama {
     width: 940px;
+  }
+
+  .photos__comment--panorama .photos__likes {
+    position: relative;
+    left: 80%;
+    top: -100px;
+    background-position-x: 120px;
   }
 }

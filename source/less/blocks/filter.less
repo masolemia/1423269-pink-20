@@ -97,17 +97,33 @@
 }
 
 @media (min-width: @desktop-width) {
+  .filter {
+    background-color: @color-white;
+    padding-bottom: 20px;
+  }
+
+  .filter__block {
+    background-color: @color-adding;
+  }
+
   .filter__text {
-    padding-top: 57px;
-    padding-bottom: 75px;
+    padding-top: 20px;
+    padding-bottom: 70px;
   }
 
   .filter__buttons {
     flex-direction: row;
     gap: 40px;
+    margin-top: 140px;
+    margin-left: -50px;
   }
 
   .filter__button {
     .size (183px;55px);
+  }
+
+  .filter__image {
+    margin-left: 23px;
+    margin-top: 5px;
   }
 }
