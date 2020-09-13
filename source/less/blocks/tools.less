@@ -46,16 +46,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .tools {
-    display: flex;
-  }
-
   .tools__buttons {
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
     margin-top: 66px;
     margin-bottom: 95px;
+    width: 30px;
+    margin-left: 0;
   }
 
   .tools__item path {
@@ -71,12 +69,15 @@
     width: 22px;
   }
 
+  .tools__block {
+    display: flex;
+    height: 168px;
+  }
+
   .tools__ranges {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 76px;
-    margin-bottom: 107px;
     margin-left: 30px;
   }
 
