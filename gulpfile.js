@@ -11,7 +11,7 @@ const rename = require("gulp-rename");
 const imagemin =require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 
 //HTML
 const html = () => {
@@ -46,8 +46,10 @@ exports.styles = styles;
 //JS min
 
 const jsMin = () => {
-  return gulp.src('js/*.js')
-    .pipe(uglify())
+  return gulp.src("source/js/script.js")
+    .pipe(uglify({}))
+    .pipe(rename("script.min.js"))
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest('build/js'));
 }
 
@@ -82,7 +84,6 @@ exports.webp = createWebp;
 const copy = () => {
   return gulp.src ([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**",
     "source/*.ico",
   ],{
     base: "source"
@@ -120,7 +121,7 @@ const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("html"));
   gulp.watch("source/img/**/*.{png,jpg}", gulp.series(images, webp));
-  gulp.watch("source/js", gulp.series("jsMin"));
+  gulp.watch("source/js/*.js", gulp.series("jsMin"));
 }
 
 const build = gulp.series(
@@ -128,6 +129,7 @@ const build = gulp.series(
   copy,
   styles,
   html,
+  jsMin,
   images,
   createWebp
 );
