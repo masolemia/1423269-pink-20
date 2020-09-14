@@ -22,8 +22,8 @@ navToggle.addEventListener("click", function(){
 
 
 const form = document.querySelector(".form");
-const successPopUp = form.querySelector(".pop-up--success");
-const closePopUp = form.querySelector(".pop-up__button");
+const successPopUp = document.querySelector("#pop-up-success");
+const closePopUp = document.querySelector("#pop-up__button");
 
 const onFormSubmit = function(evt) {
   evt.preventDefault();
@@ -42,4 +42,4 @@ const onClosePopUpClick = function() {
   form.addEventListener("submit", onFormSubmit);
 };
 
-form.removeEventListener("submit", onFormSubmit);
+form.addEventListener("submit", onFormSubmit);
