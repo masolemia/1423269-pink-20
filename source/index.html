@@ -3,30 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page page__body">
       <header class="page__header">
         <nav class="main-nav main-nav--nojs">
-          <div class="main-nav__header">
-            <a class="main-nav__link" href="index.html">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
-              </picture>
-            </a>
-            <button class="main-nav__toggle">
-              <span class="visually-hidden">Закрыть меню</span>
-            </button>
+          <div class="main-nav__block page__container">
+            <div class="main-nav__header">
+              <a class="main-nav__link" href="index.html">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+                </picture>
+              </a>
+              <button class="main-nav__toggle">
+                <span class="visually-hidden">Закрыть меню</span>
+              </button>
+            </div>
+            <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" >Главная</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            </ul>
           </div>
-          <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" >Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          </ul>
         </nav>
         <div class="header-block header-block--index">
           <div class="page__container">
@@ -85,7 +88,7 @@
                     <p class="capabilities__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                     <picture class="capabilities__item-image" >
                       <source type="image/webp" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
-                      <img src="img/iphone-screen-3-desktop@1x.png"  alt="Скриншот приложения">
+                      <img src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="Скриншот приложения">
                     </picture>
                   </li>
                 </ul>
