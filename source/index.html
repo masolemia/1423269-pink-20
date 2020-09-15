@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Пинк</title>
   </head>
@@ -14,7 +14,7 @@
             <div class="main-nav__header">
               <a class="main-nav__link" href="index.html">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                   <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
                   <img class="main-nav__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
                 </picture>
@@ -146,9 +146,9 @@
             <table class="prices__table">
               <tr>
                 <th class="prices__option prices__option--empty"></th>
-                <th class="prices__rate">База <p class="prices__rate prices__rate--cost">1,99 USD</p></th>
-                <th class="prices__rate prices__rate--hit">Стандарт <p class="prices__rate prices__rate--cost">3,99 USD</p></th>
-                <th class="prices__rate">Анлим <p class="prices__rate prices__rate--cost">9,99 USD</p></th>
+                <th class="prices__rate">База <p class="prices__cost">1,99 USD</p></th>
+                <th class="prices__rate prices__rate--hit">Стандарт <p class="prices__cost">3,99 USD</p></th>
+                <th class="prices__rate">Анлим <p class="prices__cost">9,99 USD</p></th>
               </tr>
               <tr>
                 <td class="prices__option">Розовый фильтр</td>
@@ -199,7 +199,7 @@
           <div class="our-contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.207572322049!2d30.3230474!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1599317159924!5m2!1sru!2sru"  width="320" height="200" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1000px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"  srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
@@ -214,7 +214,7 @@
           <div class="page-footer__logo">
             <a href="index.html">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+                <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
                 <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink">
               </picture>
             </a>
@@ -236,6 +236,6 @@
           </p>
         </div>
       </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

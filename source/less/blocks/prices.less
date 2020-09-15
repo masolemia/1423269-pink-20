@@ -32,20 +32,21 @@
   padding-bottom: 29px;
   text-transform: uppercase;
 
-  &--cost {
-    .font (18px; 30px);
-
-    font-weight: 300;
-    margin: 0;
-    margin-top: -5px;
-  }
-
   &--hit {
     background-image: url("../img/bg-hit.png");
     background-repeat: no-repeat;
-    background-size: 70px;
+    background-size: 74px;
     background-position: top left;
   }
+}
+
+.prices__cost {
+  .font (18px; 30px);
+
+  font-weight: 300;
+  margin: 0;
+  margin-top: -5px;
+  background-color: transparent;
 }
 
 .prices__option {
@@ -94,6 +95,10 @@
     min-height: 75px;
     width: 152px;
     padding-bottom: 10px;
+
+    &--hit {
+      background-size: 61px;
+    }
   }
 
   .prices__value {
