@@ -1,0 +1,35 @@
+.page-main__text {
+  .font(14px;30px);
+
+  color: @color-main;
+  text-align: center;
+  width: 280px;
+  margin: 45px auto;
+  margin-bottom: 35px;
+
+  &--wish {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__text {
+    .font (18px;30px);
+
+    width: 490px;
+    margin-top: 100px;
+    margin-bottom: 68px;
+
+    &--wish {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main_text {
+    width: 756px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+}
