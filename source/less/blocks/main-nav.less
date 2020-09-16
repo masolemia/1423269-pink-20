@@ -8,15 +8,14 @@
 
 .main-nav__header {
   min-height: 69px;
-  padding: 23px 20px;
-  padding-bottom: 16px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   box-shadow: 0.1px 1px 0.1px #000000, inset 0.1px 1px 0.1px rgba(255, 255, 255, 0.15);
 }
 
 .main-nav__toggle {
-  width: 33px;
+  width: 53px;
   height: 33px;
   background-color: transparent;
   box-shadow: none;
@@ -30,6 +29,7 @@
   }
 
   &--closed {
+    margin-top: -8px;
     background-image: url("../img/icon-menu-burger.svg");
   }
 }
@@ -84,11 +84,13 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__header {
-    .padding-x (20px);
-
     min-height: 100px;
     padding-top: 28px;
-    padding-bottom: 31px;
+  }
+
+
+  .main-nav__toggle {
+    margin-top: 12px;
   }
 
   .main-nav__link {
